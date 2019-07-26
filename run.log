@@ -1,0 +1,140 @@
+make results.xml
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1'
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1:/home/u2/ashmansk/.local/lib/python3.7/site-packages:/home/u2/ashmansk/.local/lib/python3.7/site-packages: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=foobar_tb TESTCASE= TOPLEVEL=foobar COCOTB_SIM=1 \
+	GPI_EXTRA= TOPLEVEL_LANG=verilog \
+	set -o pipefail; \
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64/libvpi +access+rwc  foobar.v  2>&1 | tee sim_build/sim.log
+irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+Loading snapshot worklib.foobar:v .................... Done
+     -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
+     -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
+ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
+ncsim> run
+     0.00ns INFO     Running tests with Cocotb v1.2.0rc1 from /home/u2/ashmansk/.local/lib/python3.7/site-packages
+     0.00ns INFO     Seeding Python random module with 1564154816
+     0.00ns INFO     Found test foobar_tb.foobar_basic_test
+     0.00ns INFO     Running test 1/1: foobar_basic_test
+     0.00ns INFO     Starting test: "foobar_basic_test"
+                     Description: Basic test for 'foobar' module
+     0.00ns INFO     i=0 dut.q=0
+    10.00ns INFO     i=1 dut.q=1
+    20.00ns INFO     i=2 dut.q=2
+    30.00ns INFO     i=3 dut.q=3
+    40.00ns INFO     i=4 dut.q=4
+    50.00ns INFO     i=5 dut.q=5
+    60.00ns INFO     i=6 dut.q=6
+    70.00ns INFO     i=7 dut.q=7
+    80.00ns INFO     i=8 dut.q=8
+    90.00ns INFO     i=9 dut.q=9
+   100.00ns INFO     i=10 dut.q=10
+   110.00ns INFO     i=11 dut.q=11
+   120.00ns INFO     i=12 dut.q=12
+   130.00ns INFO     i=13 dut.q=13
+   140.00ns INFO     i=14 dut.q=14
+   150.00ns INFO     i=15 dut.q=15
+   160.00ns INFO     i=16 dut.q=16
+   170.00ns INFO     i=17 dut.q=17
+   180.00ns INFO     i=18 dut.q=18
+   190.00ns INFO     i=19 dut.q=19
+   200.00ns INFO     i=20 dut.q=20
+   210.00ns INFO     i=21 dut.q=21
+   220.00ns INFO     i=22 dut.q=22
+   230.00ns INFO     i=23 dut.q=23
+   240.00ns INFO     i=24 dut.q=24
+   250.00ns INFO     i=25 dut.q=25
+   260.00ns INFO     i=26 dut.q=26
+   270.00ns INFO     i=27 dut.q=27
+   280.00ns INFO     i=28 dut.q=28
+   290.00ns INFO     i=29 dut.q=29
+   300.00ns INFO     i=30 dut.q=30
+   310.00ns INFO     i=31 dut.q=31
+   320.00ns INFO     i=32 dut.q=32
+   330.00ns INFO     i=33 dut.q=33
+   340.00ns INFO     i=34 dut.q=34
+   350.00ns INFO     i=35 dut.q=35
+   360.00ns INFO     i=36 dut.q=36
+   370.00ns INFO     i=37 dut.q=37
+   380.00ns INFO     i=38 dut.q=38
+   390.00ns INFO     i=39 dut.q=39
+   400.00ns INFO     i=40 dut.q=40
+   410.00ns INFO     i=41 dut.q=41
+   420.00ns INFO     i=42 dut.q=42
+   430.00ns INFO     i=43 dut.q=43
+   440.00ns INFO     i=44 dut.q=44
+   450.00ns INFO     i=45 dut.q=45
+   460.00ns INFO     i=46 dut.q=46
+   470.00ns INFO     i=47 dut.q=47
+   480.00ns INFO     i=48 dut.q=48
+   490.00ns INFO     i=49 dut.q=49
+   500.00ns INFO     i=50 dut.q=50
+   510.00ns INFO     i=51 dut.q=51
+   520.00ns INFO     i=52 dut.q=52
+   530.00ns INFO     i=53 dut.q=53
+   540.00ns INFO     i=54 dut.q=54
+   550.00ns INFO     i=55 dut.q=55
+   560.00ns INFO     i=56 dut.q=56
+   570.00ns INFO     i=57 dut.q=57
+   580.00ns INFO     i=58 dut.q=58
+   590.00ns INFO     i=59 dut.q=59
+   600.00ns INFO     i=60 dut.q=60
+   610.00ns INFO     i=61 dut.q=61
+   620.00ns INFO     i=62 dut.q=62
+   630.00ns INFO     i=63 dut.q=63
+   640.00ns INFO     i=64 dut.q=64
+   650.00ns INFO     i=65 dut.q=65
+   660.00ns INFO     i=66 dut.q=66
+   670.00ns INFO     i=67 dut.q=67
+   680.00ns INFO     i=68 dut.q=68
+   690.00ns INFO     i=69 dut.q=69
+   700.00ns INFO     i=70 dut.q=70
+   710.00ns INFO     i=71 dut.q=71
+   720.00ns INFO     i=72 dut.q=72
+   730.00ns INFO     i=73 dut.q=73
+   740.00ns INFO     i=74 dut.q=74
+   750.00ns INFO     i=75 dut.q=75
+   760.00ns INFO     i=76 dut.q=76
+   770.00ns INFO     i=77 dut.q=77
+   780.00ns INFO     i=78 dut.q=78
+   790.00ns INFO     i=79 dut.q=79
+   800.00ns INFO     i=80 dut.q=80
+   810.00ns INFO     i=81 dut.q=81
+   820.00ns INFO     i=82 dut.q=82
+   830.00ns INFO     i=83 dut.q=83
+   840.00ns INFO     i=84 dut.q=84
+   850.00ns INFO     i=85 dut.q=85
+   860.00ns INFO     i=86 dut.q=86
+   870.00ns INFO     i=87 dut.q=87
+   880.00ns INFO     i=88 dut.q=88
+   890.00ns INFO     i=89 dut.q=89
+   900.00ns INFO     i=90 dut.q=90
+   910.00ns INFO     i=91 dut.q=91
+   920.00ns INFO     i=92 dut.q=92
+   930.00ns INFO     i=93 dut.q=93
+   940.00ns INFO     i=94 dut.q=94
+   950.00ns INFO     i=95 dut.q=95
+   960.00ns INFO     i=96 dut.q=96
+   970.00ns INFO     i=97 dut.q=97
+   980.00ns INFO     i=98 dut.q=98
+   990.00ns INFO     i=99 dut.q=99
+   990.00ns INFO     hello!
+   990.00ns INFO     Test Passed: foobar_basic_test
+   990.00ns INFO     Passed 1 tests (0 skipped)
+   990.00ns INFO     *************************************************************************************
+                     ** TEST                         PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
+                     *************************************************************************************
+                     ** foobar_tb.foobar_basic_test    PASS          990.00          0.05     19561.90  **
+                     *************************************************************************************
+                     
+   990.00ns INFO     *************************************************************************************
+                     **                                 ERRORS : 0                                      **
+                     *************************************************************************************
+                     **                               SIM TIME : 990.00 NS                              **
+                     **                              REAL TIME : 0.05 S                                 **
+                     **                        SIM / REAL TIME : 18026.17 NS/S                          **
+                     *************************************************************************************
+                     
+   990.00ns INFO     Shutting down...
+Simulation complete via $finish(1) at time 990001 PS + 0
+ncsim> exit
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1'
