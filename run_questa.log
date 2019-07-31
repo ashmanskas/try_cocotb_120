@@ -1,53 +1,53 @@
 CONDA_PYTHON_EXE=/tape/ashmansk/anaconda3/bin/python
 make results.xml
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120'
 mkdir -p sim_build
-mkdir -p /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64
-mkdir -p /tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64
-make -C /home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/utils SIM=questa
-make[2]: Entering directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/utils'
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return -DMODELSIM -c -I/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/cocotb_utils.o cocotb_utils.c
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64/libcocotbutils.so /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/cocotb_utils.o    
-make[2]: Leaving directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/utils'
-make -C /home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/gpi_log SIM=questa
-make[2]: Entering directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/gpi_log'
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return -DFILTER -DMODELSIM -c -I/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/gpi_logging.o gpi_logging.c
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return -DFILTER -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64/libgpilog.so /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/gpi_logging.o   -lpython3.7m 
-make[2]: Leaving directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/gpi_log'
-make -C /home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/embed SIM=questa
-make[2]: Entering directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/embed'
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return -DPYTHON_SO_LIB=libpython3.7m.so -DMODELSIM -c -I/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/gpi_embed.o gpi_embed.c
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return -DPYTHON_SO_LIB=libpython3.7m.so -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64/libcocotb.so /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/gpi_embed.o   -lpython3.7m -lgpilog -lcocotbutils -L/tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64
-make[2]: Leaving directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/embed'
-make -C /home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/gpi EXTRA_LIBS= EXTRA_LIBDIRS= SIM=questa
-make[2]: Entering directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/gpi'
-g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DLIB_EXT=so -DSINGLETON_HANDLES -DMODELSIM -c -I/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/GpiCbHdl.o GpiCbHdl.cpp
-g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DLIB_EXT=so -DSINGLETON_HANDLES -DMODELSIM -c -I/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/GpiCommon.o GpiCommon.cpp
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DLIB_EXT=so -DSINGLETON_HANDLES -DMODELSIM -Wstrict-prototypes -Waggregate-return -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64/libgpi.so  /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/GpiCbHdl.o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/GpiCommon.o  -lcocotbutils -lgpilog -lcocotb -lstdc++ -L/tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64
-make[2]: Leaving directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/gpi'
-make -C /home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/simulator SIM=questa
-make[2]: Entering directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/simulator'
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return  -DMODELSIM -c -I/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/simulatormodule.o simulatormodule.c
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return  -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64/libsim.so /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/simulatormodule.o   -lcocotbutils -lgpi -lgpilog -lpython3.7m -L/tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64
-ln -sf libsim.so /tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64/simulator.so
-make[2]: Leaving directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/simulator'
-make -C /home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/vpi EXTRA_LIBS= EXTRA_LIBDIRS= SIM=questa
-make[2]: Entering directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/vpi'
-g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DMODELSIM -c -I/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/VpiImpl.o VpiImpl.cpp
-g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DMODELSIM -c -I/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/VpiCbHdl.o VpiCbHdl.cpp
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DMODELSIM -Wstrict-prototypes -Waggregate-return -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64/libvpi.so  /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/VpiImpl.o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/VpiCbHdl.o   -lgpilog -lgpi -lstdc++  -L/tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64
-ln -sf libvpi.so /tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64/gpivpi.vpl
-ln -sf libvpi.so /tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64/cocotb.vpi
-make[2]: Leaving directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/vpi'
-make -C /home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/fli EXTRA_LIBS= EXTRA_LIBDIRS= SIM=questa
-make[2]: Entering directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/fli'
-g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DFLI_CHECKING -DUSE_CACHE -DMODELSIM -c -I/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m -I/cad/mentor/questa-10.7/questasim/bin/../include -o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/FliImpl.o FliImpl.cpp
-g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DFLI_CHECKING -DUSE_CACHE -DMODELSIM -c -I/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m -I/cad/mentor/questa-10.7/questasim/bin/../include -o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/FliCbHdl.o FliCbHdl.cpp
-g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DFLI_CHECKING -DUSE_CACHE -DMODELSIM -c -I/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m -I/cad/mentor/questa-10.7/questasim/bin/../include -o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/FliObjHdl.o FliObjHdl.cpp
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DFLI_CHECKING -DUSE_CACHE -DMODELSIM -Wstrict-prototypes -Waggregate-return -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64/libfli.so  /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/FliImpl.o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/FliCbHdl.o /tape/ashmansk/try_cocotb_120rc1/build/obj/x86_64/FliObjHdl.o   -lgpilog -lgpi -lstdc++ -L/tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64 
-make[2]: Leaving directory `/home/u2/ashmansk/.local/lib/python3.7/site-packages/cocotb/share/lib/fli'
-set -o pipefail; cd sim_build && LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=foobar_tb TESTCASE= TOPLEVEL="work.foobar" COCOTB_SIM=1 \
-	GPI_EXTRA= TOPLEVEL_LANG=verilog PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1:/home/u2/ashmansk/.local/lib/python3.7/site-packages: \
+mkdir -p /tape/ashmansk/try_cocotb_120/build/obj/x86_64
+mkdir -p /tape/ashmansk/try_cocotb_120/build/libs/x86_64
+make -C /tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/utils SIM=questa
+make[2]: Entering directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/utils'
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return -DMODELSIM -c -I/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/cocotb_utils.o cocotb_utils.c
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/build/libs/x86_64/libcocotbutils.so /tape/ashmansk/try_cocotb_120/build/obj/x86_64/cocotb_utils.o    
+make[2]: Leaving directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/utils'
+make -C /tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/gpi_log SIM=questa
+make[2]: Entering directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/gpi_log'
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return -DFILTER -DMODELSIM -c -I/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/gpi_logging.o gpi_logging.c
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return -DFILTER -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/build/libs/x86_64/libgpilog.so /tape/ashmansk/try_cocotb_120/build/obj/x86_64/gpi_logging.o   -lpython3.7m 
+make[2]: Leaving directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/gpi_log'
+make -C /tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/embed SIM=questa
+make[2]: Entering directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/embed'
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return -DPYTHON_SO_LIB=libpython3.7m.so -DMODELSIM -c -I/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/gpi_embed.o gpi_embed.c
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return -DPYTHON_SO_LIB=libpython3.7m.so -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/build/libs/x86_64/libcocotb.so /tape/ashmansk/try_cocotb_120/build/obj/x86_64/gpi_embed.o   -lpython3.7m -lgpilog -lcocotbutils -L/tape/ashmansk/try_cocotb_120/build/libs/x86_64
+make[2]: Leaving directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/embed'
+make -C /tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/gpi EXTRA_LIBS= EXTRA_LIBDIRS= SIM=questa
+make[2]: Entering directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/gpi'
+g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DLIB_EXT=so -DSINGLETON_HANDLES -DMODELSIM -c -I/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/GpiCbHdl.o GpiCbHdl.cpp
+g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DLIB_EXT=so -DSINGLETON_HANDLES -DMODELSIM -c -I/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/GpiCommon.o GpiCommon.cpp
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DLIB_EXT=so -DSINGLETON_HANDLES -DMODELSIM -Wstrict-prototypes -Waggregate-return -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/build/libs/x86_64/libgpi.so  /tape/ashmansk/try_cocotb_120/build/obj/x86_64/GpiCbHdl.o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/GpiCommon.o  -lcocotbutils -lgpilog -lcocotb -lstdc++ -L/tape/ashmansk/try_cocotb_120/build/libs/x86_64
+make[2]: Leaving directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/gpi'
+make -C /tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/simulator SIM=questa
+make[2]: Entering directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/simulator'
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return  -DMODELSIM -c -I/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/simulatormodule.o simulatormodule.c
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DMODELSIM -Wstrict-prototypes -Waggregate-return  -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/build/libs/x86_64/libsim.so /tape/ashmansk/try_cocotb_120/build/obj/x86_64/simulatormodule.o   -lcocotbutils -lgpi -lgpilog -lpython3.7m -L/tape/ashmansk/try_cocotb_120/build/libs/x86_64
+ln -sf libsim.so /tape/ashmansk/try_cocotb_120/build/libs/x86_64/simulator.so
+make[2]: Leaving directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/simulator'
+make -C /tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/vpi EXTRA_LIBS= EXTRA_LIBDIRS= SIM=questa
+make[2]: Entering directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/vpi'
+g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DMODELSIM -c -I/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/VpiImpl.o VpiImpl.cpp
+g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DMODELSIM -c -I/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/VpiCbHdl.o VpiCbHdl.cpp
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DMODELSIM -Wstrict-prototypes -Waggregate-return -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/build/libs/x86_64/libvpi.so  /tape/ashmansk/try_cocotb_120/build/obj/x86_64/VpiImpl.o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/VpiCbHdl.o   -lgpilog -lgpi -lstdc++  -L/tape/ashmansk/try_cocotb_120/build/libs/x86_64
+ln -sf libvpi.so /tape/ashmansk/try_cocotb_120/build/libs/x86_64/gpivpi.vpl
+ln -sf libvpi.so /tape/ashmansk/try_cocotb_120/build/libs/x86_64/cocotb.vpi
+make[2]: Leaving directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/vpi'
+make -C /tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/fli EXTRA_LIBS= EXTRA_LIBDIRS= SIM=questa
+make[2]: Entering directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/fli'
+g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DFLI_CHECKING -DUSE_CACHE -DMODELSIM -c -I/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m -I/cad/mentor/questa-10.7/questasim/bin/../include -o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/FliImpl.o FliImpl.cpp
+g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DFLI_CHECKING -DUSE_CACHE -DMODELSIM -c -I/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m -I/cad/mentor/questa-10.7/questasim/bin/../include -o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/FliCbHdl.o FliCbHdl.cpp
+g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DFLI_CHECKING -DUSE_CACHE -DMODELSIM -c -I/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m -I/cad/mentor/questa-10.7/questasim/bin/../include -o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/FliObjHdl.o FliObjHdl.cpp
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DFLI_CHECKING -DUSE_CACHE -DMODELSIM -Wstrict-prototypes -Waggregate-return -DMODELSIM -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/build/libs/x86_64/libfli.so  /tape/ashmansk/try_cocotb_120/build/obj/x86_64/FliImpl.o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/FliCbHdl.o /tape/ashmansk/try_cocotb_120/build/obj/x86_64/FliObjHdl.o   -lgpilog -lgpi -lstdc++ -L/tape/ashmansk/try_cocotb_120/build/libs/x86_64 
+make[2]: Leaving directory `/tape/ashmansk/anaconda3/lib/python3.7/site-packages/cocotb/share/lib/fli'
+set -o pipefail; cd sim_build && LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=foobar_tb TESTCASE= TOPLEVEL="work.foobar" COCOTB_SIM=1 \
+	GPI_EXTRA= TOPLEVEL_LANG=verilog PYTHONPATH=/tape/ashmansk/try_cocotb_120/build/libs/x86_64:/tape/ashmansk/try_cocotb_120:/tape/ashmansk/anaconda3/lib/python3.7/site-packages: \
 	/cad/mentor/questa-10.7/questasim/bin/vsim -c -64  -do runsim.do 2>&1 | tee sim.log
 Reading pref.tcl
 
@@ -61,16 +61,16 @@ Reading pref.tcl
 # vmap work work 
 # Modifying modelsim.ini
 # QuestaSim-64 vlog 10.7 Compiler 2017.12 Dec  6 2017
-# Start time: 13:59:29 on Jul 31,2019
-# vlog -work work "+define+COCOTB_SIM" -sv -timescale 1ns/100ps -mfcu "+acc=rmb" /tape/ashmansk/try_cocotb_120rc1/foobar.v 
+# Start time: 16:54:48 on Jul 31,2019
+# vlog -work work "+define+COCOTB_SIM" -sv -timescale 1ns/100ps -mfcu "+acc=rmb" /tape/ashmansk/try_cocotb_120/foobar.v 
 # -- Compiling module foobar
 # 
 # Top level modules:
 # 	foobar
-# End time: 13:59:29 on Jul 31,2019, Elapsed time: 0:00:00
+# End time: 16:54:48 on Jul 31,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -onfinish exit -pli "libvpi.so" work.foobar 
-# Start time: 13:59:29 on Jul 31,2019
+# Start time: 16:54:48 on Jul 31,2019
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vsim-3865) Due to PLI being present, full design access is being specified.
 # //  Questa Sim-64
@@ -89,11 +89,11 @@ Reading pref.tcl
 # //
 # Loading sv_std.std
 # Loading work.foobar(fast)
-# Loading /tape/ashmansk/try_cocotb_120rc1/build/libs/x86_64/libvpi.so
+# Loading /tape/ashmansk/try_cocotb_120/build/libs/x86_64/libvpi.so
 #      -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
 #      -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
-#      0.00ns INFO     Running tests with Cocotb v1.2.0rc1 from /home/u2/ashmansk/.local/lib/python3.7/site-packages
-#      0.00ns INFO     Seeding Python random module with 1564595970
+#      0.00ns INFO     Running tests with Cocotb v1.2.0 from /tape/ashmansk/anaconda3/lib/python3.7/site-packages
+#      0.00ns INFO     Seeding Python random module with 1564606489
 #      0.00ns INFO     Found test foobar_tb.foobar_basic_test
 #      0.00ns INFO     Running test 1/1: foobar_basic_test
 #      0.00ns INFO     Starting test: "foobar_basic_test"
@@ -204,20 +204,20 @@ Reading pref.tcl
 #    990.00ns INFO     *************************************************************************************
 #                      ** TEST                         PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
 #                      *************************************************************************************
-#                      ** foobar_tb.foobar_basic_test    PASS          990.00          0.04     24951.12  **
+#                      ** foobar_tb.foobar_basic_test    PASS          990.00          0.04     23352.82  **
 #                      *************************************************************************************
 #                      
 #    990.00ns INFO     *************************************************************************************
 #                      **                                 ERRORS : 0                                      **
 #                      *************************************************************************************
 #                      **                               SIM TIME : 990.00 NS                              **
-#                      **                              REAL TIME : 0.04 S                                 **
-#                      **                        SIM / REAL TIME : 22648.81 NS/S                          **
+#                      **                              REAL TIME : 0.05 S                                 **
+#                      **                        SIM / REAL TIME : 21240.59 NS/S                          **
 #                      *************************************************************************************
 #                      
 #    990.00ns INFO     Shutting down...
 # ** Note: $finish
 #    Time: 990001 ps  Iteration: 0  Instance: /foobar
-# End time: 13:59:30 on Jul 31,2019, Elapsed time: 0:00:01
+# End time: 16:54:49 on Jul 31,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120'

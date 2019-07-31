@@ -6,5 +6,6 @@ COCOTB_REDUCED_LOG_FMT=1 \
 COCOTB_ANSI_OUTPUT=0 \
 ARCH=x86_64 \
 SIM=questa \
+LM_LICENSE_FILE=1717@jicama.seas.upenn.edu \
 PYTHON_BIN=python3 \
 make
