@@ -1,26 +1,26 @@
-ncvlog: *E,EXPMPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,32|6): expecting the keyword 'module', 'macromodule' or 'primitive'[A.1].
-ncvlog: *E,REGIOX (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,40|17): reg '', declared in a module/macromodule, cannot also be declared input or inout [12.3.7(IEEE)].
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,50|61): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,50|61): Expecting a ',' or ')' [12.3.2(IEEE)].
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,51|19): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,51|19): Expecting a ',' or ')' [12.3.2(IEEE)].
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,57|59): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,57|59): Expecting a ',' or ')' [12.3.2(IEEE)].
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|61): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|61): Expecting a ',' or ')' [12.3.2(IEEE)].
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|62): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|62): Expecting a ',' or ')' [12.3.2(IEEE)].
-ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,61|35): expecting an equal sign ('=') [3.10(IEEE)].
-ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,62|16): expecting an equal sign ('=') [3.10(IEEE)].
-ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,71|36): expecting an equal sign ('=') [3.10(IEEE)].
-ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,72|17): expecting an equal sign ('=') [3.10(IEEE)].
-ncvlog: *E,EXPCOM (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,91|28): expecting a comma [3.2.1][6.1(IEEE)].
-ncvlog: *E,EXPCOM (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,92|32): expecting a comma [3.2.1][6.1(IEEE)].
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,98|27): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,99|35): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,101|27): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,101|28): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,103|26): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,104|9): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,104|26): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPMPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,32|6): expecting the keyword 'module', 'macromodule' or 'primitive'[A.1].
+ncvlog: *E,REGIOX (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,40|17): reg '', declared in a module/macromodule, cannot also be declared input or inout [12.3.7(IEEE)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,50|61): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,50|61): Expecting a ',' or ')' [12.3.2(IEEE)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,51|19): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,51|19): Expecting a ',' or ')' [12.3.2(IEEE)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,57|59): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,57|59): Expecting a ',' or ')' [12.3.2(IEEE)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|61): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|61): Expecting a ',' or ')' [12.3.2(IEEE)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|62): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|62): Expecting a ',' or ')' [12.3.2(IEEE)].
+ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,61|35): expecting an equal sign ('=') [3.10(IEEE)].
+ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,62|16): expecting an equal sign ('=') [3.10(IEEE)].
+ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,71|36): expecting an equal sign ('=') [3.10(IEEE)].
+ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,72|17): expecting an equal sign ('=') [3.10(IEEE)].
+ncvlog: *E,EXPCOM (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,91|28): expecting a comma [3.2.1][6.1(IEEE)].
+ncvlog: *E,EXPCOM (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,92|32): expecting a comma [3.2.1][6.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,98|27): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,99|35): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,101|27): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,101|28): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,103|26): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,104|9): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,104|26): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
 irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 2).

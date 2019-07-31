@@ -1,59 +1,59 @@
-Initialized empty Git repository in /tape/ashmansk/try_cocotb_120rc1/cocotb/.git/
+Initialized empty Git repository in /tape/ashmansk/try_cocotb_120/cocotb/.git/
 cd test_cases/issue_120 && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_120'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_120'
 make results.xml
-make[2]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_120'
+make[2]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_120'
 mkdir -p sim_build
-mkdir -p /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64
-mkdir -p /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64
-make -C /tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/utils SIM=ius
-make[3]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/utils'
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return -DIUS -c -I/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/cocotb_utils.o cocotb_utils.c
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libcocotbutils.so /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/cocotb_utils.o    
-make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/utils'
-make -C /tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/gpi_log SIM=ius
-make[3]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/gpi_log'
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return -DFILTER -DIUS -c -I/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/gpi_logging.o gpi_logging.c
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return -DFILTER -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libgpilog.so /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/gpi_logging.o   -lpython3.7m 
-make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/gpi_log'
-make -C /tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/embed SIM=ius
-make[3]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/embed'
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return -DPYTHON_SO_LIB=libpython3.7m.so -DIUS -c -I/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/gpi_embed.o gpi_embed.c
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return -DPYTHON_SO_LIB=libpython3.7m.so -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libcocotb.so /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/gpi_embed.o   -lpython3.7m -lgpilog -lcocotbutils -L/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64
-make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/embed'
-make -C /tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/gpi EXTRA_LIBS= EXTRA_LIBDIRS= SIM=ius
-make[3]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/gpi'
-g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DLIB_EXT=so -DSINGLETON_HANDLES -DIUS -c -I/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/GpiCbHdl.o GpiCbHdl.cpp
-g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DLIB_EXT=so -DSINGLETON_HANDLES -DIUS -c -I/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/GpiCommon.o GpiCommon.cpp
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DLIB_EXT=so -DSINGLETON_HANDLES -DIUS -Wstrict-prototypes -Waggregate-return -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libgpi.so  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/GpiCbHdl.o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/GpiCommon.o  -lcocotbutils -lgpilog -lcocotb -lstdc++ -L/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64
-make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/gpi'
-make -C /tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/simulator SIM=ius
-make[3]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/simulator'
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return  -DIUS -c -I/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/simulatormodule.o simulatormodule.c
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return  -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libsim.so /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/simulatormodule.o   -lcocotbutils -lgpi -lgpilog -lpython3.7m -L/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64
-ln -sf libsim.so /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/simulator.so
-make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/simulator'
-make -C /tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/vpi EXTRA_LIBS= EXTRA_LIBDIRS= SIM=ius
-make[3]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/vpi'
-g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DIUS -c -I/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/VpiImpl.o VpiImpl.cpp
-g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DIUS -c -I/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/VpiCbHdl.o VpiCbHdl.cpp
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DIUS -Wstrict-prototypes -Waggregate-return -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi.so  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/VpiImpl.o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/VpiCbHdl.o   -lgpilog -lgpi -lstdc++  -L/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64
-ln -sf libvpi.so /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/gpivpi.vpl
-ln -sf libvpi.so /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/cocotb.vpi
-make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/vpi'
-make -C /tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/vhpi EXTRA_LIBS= EXTRA_LIBDIRS= SIM=ius
-make[3]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/vhpi'
-g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVHPI_CHECKING -DIUS -c -I/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/VhpiImpl.o VhpiImpl.cpp
-g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVHPI_CHECKING -DIUS -c -I/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/VhpiCbHdl.o VhpiCbHdl.cpp
-gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVHPI_CHECKING -DIUS -Wstrict-prototypes -Waggregate-return -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvhpi.so  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/VhpiImpl.o /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/obj/x86_64/VhpiCbHdl.o   -lgpilog -lgpi -lstdc++  -L/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64
-make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/share/lib/vhpi'
-LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_120:/tape/ashmansk/try_cocotb_120rc1/cocotb:/tape/ashmansk/try_cocotb_120rc1/cocotb: \
-	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_120 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
+mkdir -p /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64
+mkdir -p /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64
+make -C /tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/utils SIM=ius
+make[3]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/utils'
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return -DIUS -c -I/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/cocotb_utils.o cocotb_utils.c
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libcocotbutils.so /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/cocotb_utils.o    
+make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/utils'
+make -C /tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/gpi_log SIM=ius
+make[3]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/gpi_log'
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return -DFILTER -DIUS -c -I/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/gpi_logging.o gpi_logging.c
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return -DFILTER -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libgpilog.so /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/gpi_logging.o   -lpython3.7m 
+make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/gpi_log'
+make -C /tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/embed SIM=ius
+make[3]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/embed'
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return -DPYTHON_SO_LIB=libpython3.7m.so -DIUS -c -I/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/gpi_embed.o gpi_embed.c
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return -DPYTHON_SO_LIB=libpython3.7m.so -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libcocotb.so /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/gpi_embed.o   -lpython3.7m -lgpilog -lcocotbutils -L/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64
+make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/embed'
+make -C /tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/gpi EXTRA_LIBS= EXTRA_LIBDIRS= SIM=ius
+make[3]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/gpi'
+g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DLIB_EXT=so -DSINGLETON_HANDLES -DIUS -c -I/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/GpiCbHdl.o GpiCbHdl.cpp
+g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DLIB_EXT=so -DSINGLETON_HANDLES -DIUS -c -I/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/GpiCommon.o GpiCommon.cpp
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DLIB_EXT=so -DSINGLETON_HANDLES -DIUS -Wstrict-prototypes -Waggregate-return -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libgpi.so  /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/GpiCbHdl.o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/GpiCommon.o  -lcocotbutils -lgpilog -lcocotb -lstdc++ -L/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64
+make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/gpi'
+make -C /tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/simulator SIM=ius
+make[3]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/simulator'
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return  -DIUS -c -I/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/simulatormodule.o simulatormodule.c
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DIUS -Wstrict-prototypes -Waggregate-return  -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libsim.so /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/simulatormodule.o   -lcocotbutils -lgpi -lgpilog -lpython3.7m -L/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64
+ln -sf libsim.so /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/simulator.so
+make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/simulator'
+make -C /tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/vpi EXTRA_LIBS= EXTRA_LIBDIRS= SIM=ius
+make[3]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/vpi'
+g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DIUS -c -I/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/VpiImpl.o VpiImpl.cpp
+g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DIUS -c -I/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/VpiCbHdl.o VpiCbHdl.cpp
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVPI_CHECKING -DIUS -Wstrict-prototypes -Waggregate-return -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi.so  /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/VpiImpl.o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/VpiCbHdl.o   -lgpilog -lgpi -lstdc++  -L/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64
+ln -sf libvpi.so /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/gpivpi.vpl
+ln -sf libvpi.so /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/cocotb.vpi
+make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/vpi'
+make -C /tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/vhpi EXTRA_LIBS= EXTRA_LIBDIRS= SIM=ius
+make[3]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/vhpi'
+g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVHPI_CHECKING -DIUS -c -I/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/VhpiImpl.o VhpiImpl.cpp
+g++ -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVHPI_CHECKING -DIUS -c -I/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/include -I/tape/ashmansk/anaconda3/include/python3.7m  -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/VhpiCbHdl.o VhpiCbHdl.cpp
+gcc -Werror -Wcast-qual -Wcast-align -Wwrite-strings -Wall -Wno-unused-parameter -fno-common -g -DDEBUG -fpic -DVHPI_CHECKING -DIUS -Wstrict-prototypes -Waggregate-return -DIUS -shared -Xlinker -L/tape/ashmansk/anaconda3/lib -o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvhpi.so  /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/VhpiImpl.o /tape/ashmansk/try_cocotb_120/cocotb/tests/build/obj/x86_64/VhpiCbHdl.o   -lgpilog -lgpi -lstdc++  -L/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64
+make[3]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/cocotb/share/lib/vhpi'
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_120:/tape/ashmansk/try_cocotb_120/cocotb:/tape/ashmansk/try_cocotb_120/cocotb: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_120 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
 	GPI_EXTRA= TOPLEVEL_LANG=verilog \
 	set -o pipefail; \
-	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_120/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_120/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
 irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_120/../../../tests/designs/sample_module/sample_module.sv
+file: /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_120/../../../tests/designs/sample_module/sample_module.sv
 	module worklib.sample_module:sv
 		errors: 0, warnings: 0
      -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
@@ -61,12 +61,12 @@ file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_120/../../.
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		$unit_0x006fd8fb
+		$unit_0x19014cc4
 		sample_module
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.sample_module:sv <0x694a91ea>
+		worklib.sample_module:sv <0x58a62064>
 			streams:  14, words:  3370
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -88,18 +88,18 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
      -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
-     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603892
+     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120/cocotb
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564606140
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_120.issue_120_scheduling
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: issue_120_scheduling
-     0.00ns INFO     ..sue_120_scheduling.0x7f335ad8a400       decorators.py:253  in _advance                        Starting test: "issue_120_scheduling"
+     0.00ns INFO     ..sue_120_scheduling.0x7ff3d87234e0       decorators.py:253  in _advance                        Starting test: "issue_120_scheduling"
                                                                                                                      Description: None
     15.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_120_scheduling
     15.00ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 1 tests (0 skipped)
     15.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ****************************************************************************************
                                                                                                                      ** TEST                            PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ****************************************************************************************
-                                                                                                                     ** issue_120.issue_120_scheduling    PASS           15.00          0.01      2928.36  **
+                                                                                                                     ** issue_120.issue_120_scheduling    PASS           15.00          0.01      2971.79  **
                                                                                                                      ****************************************************************************************
                                                                                                                      
     15.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -107,26 +107,26 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 15.00 NS                               **
                                                                                                                      **                              REAL TIME : 0.01 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 1559.48 NS/S                           **
+                                                                                                                     **                        SIM / REAL TIME : 1571.67 NS/S                           **
                                                                                                                      *************************************************************************************
                                                                                                                      
     15.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
 Simulation complete via $finish(1) at time 15001 PS + 0
 ncsim> exit
-make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_120'
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_120'
+make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_120'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_120'
 cd test_cases/issue_134 && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_134'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_134'
 make results.xml
-make[2]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_134'
+make[2]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_134'
 mkdir -p sim_build
-LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_134:/tape/ashmansk/try_cocotb_120rc1/cocotb:/tape/ashmansk/try_cocotb_120rc1/cocotb: \
-	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=test_reals,test_integers TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_134:/tape/ashmansk/try_cocotb_120/cocotb:/tape/ashmansk/try_cocotb_120/cocotb: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=test_reals,test_integers TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
 	GPI_EXTRA= TOPLEVEL_LANG=verilog \
 	set -o pipefail; \
-	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_134/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_134/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
 irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_134/../../../tests/designs/sample_module/sample_module.sv
+file: /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_134/../../../tests/designs/sample_module/sample_module.sv
 	module worklib.sample_module:sv
 		errors: 0, warnings: 0
      -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
@@ -134,12 +134,12 @@ file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_134/../../.
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		$unit_0x006fd8fb
+		$unit_0x19014cc4
 		sample_module
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.sample_module:sv <0x694a91ea>
+		worklib.sample_module:sv <0x58a62064>
 			streams:  14, words:  3370
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -161,12 +161,12 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
      -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
-     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603894
+     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120/cocotb
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564606141
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test test_integers.test_integer
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test test_reals.assign_double
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/2: test_integer
-     0.00ns INFO     ...test.test_integer.0x7f1298d59be0       decorators.py:253  in _advance                        Starting test: "test_integer"
+     0.00ns INFO     ...test.test_integer.0x7f4e042451d0       decorators.py:253  in _advance                        Starting test: "test_integer"
                                                                                                                      Description: 
                                                                                                                          Test access to integers
                                                                                                                          
@@ -174,20 +174,20 @@ ncsim> run
      0.03ns INFO     cocotb.test                            test_integers.py:25   in test_integer                    dut.stream_in_int = 4
      0.03ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: test_integer
      0.03ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 2/2: assign_double
-     0.03ns INFO     ..test.assign_double.0x7f1298d3f5c0       decorators.py:253  in _advance                        Starting test: "assign_double"
+     0.03ns INFO     ..test.assign_double.0x7f4e0421c710       decorators.py:253  in _advance                        Starting test: "assign_double"
                                                                                                                      Description: 
                                                                                                                          Assign a random floating point value, read it back from the DUT and check
                                                                                                                          it matches what we assigned
                                                                                                                          
-     0.03ns INFO     cocotb.test                               test_reals.py:21   in assign_double                   Setting the value 9.62904e+305
-     0.03ns INFO     cocotb.test                               test_reals.py:26   in assign_double                   Read back value 9.62904e+305
+     0.03ns INFO     cocotb.test                               test_reals.py:21   in assign_double                   Setting the value -8.75775e+306
+     0.03ns INFO     cocotb.test                               test_reals.py:26   in assign_double                   Read back value -8.75775e+306
      0.04ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: assign_double
      0.04ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 2 tests (0 skipped)
      0.04ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ************************************************************************************
                                                                                                                      ** TEST                        PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ************************************************************************************
-                                                                                                                     ** test_integers.test_integer    PASS            0.03          0.00        11.78  **
-                                                                                                                     ** test_reals.assign_double      PASS            0.00          0.00         4.71  **
+                                                                                                                     ** test_integers.test_integer    PASS            0.03          0.00        11.85  **
+                                                                                                                     ** test_reals.assign_double      PASS            0.00          0.00         4.70  **
                                                                                                                      ************************************************************************************
                                                                                                                      
      0.04ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -195,26 +195,26 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 0.04 NS                                **
                                                                                                                      **                              REAL TIME : 0.01 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 3.34 NS/S                              **
+                                                                                                                     **                        SIM / REAL TIME : 3.32 NS/S                              **
                                                                                                                      *************************************************************************************
                                                                                                                      
      0.04ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
 Simulation complete via $finish(1) at time 35 PS + 0
 ncsim> exit
-make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_134'
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_134'
+make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_134'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_134'
 cd test_cases/issue_142 && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_142'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_142'
 make results.xml
-make[2]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_142'
+make[2]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_142'
 mkdir -p sim_build
-LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_142:/tape/ashmansk/try_cocotb_120rc1/cocotb:/tape/ashmansk/try_cocotb_120rc1/cocotb: \
-	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_142 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_142:/tape/ashmansk/try_cocotb_120/cocotb:/tape/ashmansk/try_cocotb_120/cocotb: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_142 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
 	GPI_EXTRA= TOPLEVEL_LANG=verilog \
 	set -o pipefail; \
-	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_142/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_142/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
 irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_142/../../../tests/designs/sample_module/sample_module.sv
+file: /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_142/../../../tests/designs/sample_module/sample_module.sv
 	module worklib.sample_module:sv
 		errors: 0, warnings: 0
      -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
@@ -222,12 +222,12 @@ file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_142/../../.
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		$unit_0x006fd8fb
+		$unit_0x19014cc4
 		sample_module
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.sample_module:sv <0x694a91ea>
+		worklib.sample_module:sv <0x58a62064>
 			streams:  14, words:  3370
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -249,11 +249,11 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
      -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
-     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603895
+     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120/cocotb
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564606142
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_142.issue_142_overflow_error
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: issue_142_overflow_error
-     0.00ns INFO     ..142_overflow_error.0x7f6bbd783710       decorators.py:253  in _advance                        Starting test: "issue_142_overflow_error"
+     0.00ns INFO     ..142_overflow_error.0x7fc57ce246a0       decorators.py:253  in _advance                        Starting test: "issue_142_overflow_error"
                                                                                                                      Description: Tranparently convert ints too long to pass
                                                                                                                             through the GPI interface natively into BinaryValues
     17.50ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_142_overflow_error
@@ -261,7 +261,7 @@ ncsim> run
     17.50ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ********************************************************************************************
                                                                                                                      ** TEST                                PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ********************************************************************************************
-                                                                                                                     ** issue_142.issue_142_overflow_error    PASS           17.50          0.01      3031.12  **
+                                                                                                                     ** issue_142.issue_142_overflow_error    PASS           17.50          0.01      2962.73  **
                                                                                                                      ********************************************************************************************
                                                                                                                      
     17.50ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -269,30 +269,30 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 17.50 NS                               **
                                                                                                                      **                              REAL TIME : 0.01 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 1498.60 NS/S                           **
+                                                                                                                     **                        SIM / REAL TIME : 1460.82 NS/S                           **
                                                                                                                      *************************************************************************************
                                                                                                                      
     17.50ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
 Simulation complete via $finish(1) at time 17501 PS + 0
 ncsim> exit
-make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_142'
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_142'
+make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_142'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_142'
 cd test_cases/issue_253 && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_253'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_253'
 Skipping issue_253 only runs on icarus
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_253'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_253'
 cd test_cases/issue_330 && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_330'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_330'
 make results.xml
-make[2]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_330'
+make[2]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_330'
 mkdir -p sim_build
-LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_330:/tape/ashmansk/try_cocotb_120rc1/cocotb:/tape/ashmansk/try_cocotb_120rc1/cocotb: \
-	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_330 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_330:/tape/ashmansk/try_cocotb_120/cocotb:/tape/ashmansk/try_cocotb_120/cocotb: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_330 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
 	GPI_EXTRA= TOPLEVEL_LANG=verilog \
 	set -o pipefail; \
-	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_330/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_330/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
 irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_330/../../../tests/designs/sample_module/sample_module.sv
+file: /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_330/../../../tests/designs/sample_module/sample_module.sv
 	module worklib.sample_module:sv
 		errors: 0, warnings: 0
      -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
@@ -300,12 +300,12 @@ file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_330/../../.
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		$unit_0x006fd8fb
+		$unit_0x19014cc4
 		sample_module
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.sample_module:sv <0x694a91ea>
+		worklib.sample_module:sv <0x58a62064>
 			streams:  14, words:  3370
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -327,19 +327,19 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
      -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
-     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603896
+     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120/cocotb
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564606144
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_330.issue_330_direct
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_330.issue_330_iteration
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/2: issue_330_direct
-     0.00ns INFO     ..t.issue_330_direct.0x7fd46928c5f8       decorators.py:253  in _advance                        Starting test: "issue_330_direct"
+     0.00ns INFO     ..t.issue_330_direct.0x7f969a245588       decorators.py:253  in _advance                        Starting test: "issue_330_direct"
                                                                                                                      Description: 
                                                                                                                          Access a structure
                                                                                                                          
      0.01ns INFO     cocotb.test                                issue_330.py:21   in issue_330_direct                Value of inout_if => a_in = z ; b_out = z
      0.01ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_330_direct
      0.01ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 2/2: issue_330_iteration
-     0.01ns INFO     ..ssue_330_iteration.0x7fd4692b7198       decorators.py:253  in _advance                        Starting test: "issue_330_iteration"
+     0.01ns INFO     ..ssue_330_iteration.0x7f969a26a128       decorators.py:253  in _advance                        Starting test: "issue_330_iteration"
                                                                                                                      Description: 
                                                                                                                          Access a structure via issue_330_iteration
                                                                                                                          
@@ -350,8 +350,8 @@ ncsim> run
      0.02ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ***************************************************************************************
                                                                                                                      ** TEST                           PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ***************************************************************************************
-                                                                                                                     ** issue_330.issue_330_direct       PASS            0.01          0.00         5.07  **
-                                                                                                                     ** issue_330.issue_330_iteration    PASS            0.01          0.00        21.94  **
+                                                                                                                     ** issue_330.issue_330_direct       PASS            0.01          0.00         4.88  **
+                                                                                                                     ** issue_330.issue_330_iteration    PASS            0.01          0.00        21.72  **
                                                                                                                      ***************************************************************************************
                                                                                                                      
      0.02ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -359,26 +359,26 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 0.02 NS                                **
                                                                                                                      **                              REAL TIME : 0.01 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 2.43 NS/S                              **
+                                                                                                                     **                        SIM / REAL TIME : 2.31 NS/S                              **
                                                                                                                      *************************************************************************************
                                                                                                                      
      0.02ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
 Simulation complete via $finish(1) at time 22 PS + 0
 ncsim> exit
-make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_330'
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_330'
+make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_330'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_330'
 cd test_cases/issue_348 && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_348'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_348'
 make results.xml
-make[2]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_348'
+make[2]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_348'
 mkdir -p sim_build
-LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_348:/tape/ashmansk/try_cocotb_120rc1/cocotb:/tape/ashmansk/try_cocotb_120rc1/cocotb: \
-	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_348 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_348:/tape/ashmansk/try_cocotb_120/cocotb:/tape/ashmansk/try_cocotb_120/cocotb: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_348 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
 	GPI_EXTRA= TOPLEVEL_LANG=verilog \
 	set -o pipefail; \
-	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_348/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_348/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
 irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_348/../../../tests/designs/sample_module/sample_module.sv
+file: /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_348/../../../tests/designs/sample_module/sample_module.sv
 	module worklib.sample_module:sv
 		errors: 0, warnings: 0
      -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
@@ -386,12 +386,12 @@ file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_348/../../.
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		$unit_0x006fd8fb
+		$unit_0x19014cc4
 		sample_module
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.sample_module:sv <0x694a91ea>
+		worklib.sample_module:sv <0x58a62064>
 			streams:  14, words:  3370
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -413,30 +413,30 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
      -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
-     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603898
+     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120/cocotb
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564606145
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_348.issue_348_either
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_348.issue_348_falling
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_348.issue_348_rising
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/3: issue_348_either
-     0.00ns INFO     ..t.issue_348_either.0x7f0d0f9a30f0       decorators.py:253  in _advance                        Starting test: "issue_348_either"
+     0.00ns INFO     ..t.issue_348_either.0x7fd747b13080       decorators.py:253  in _advance                        Starting test: "issue_348_either"
                                                                                                                      Description:  Start two monitors on Edge 
     10.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_348_either
     10.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 2/3: issue_348_falling
-    10.00ns INFO     ...issue_348_falling.0x7f0d0f998f28       decorators.py:253  in _advance                        Starting test: "issue_348_falling"
+    10.00ns INFO     ...issue_348_falling.0x7fd747b07eb8       decorators.py:253  in _advance                        Starting test: "issue_348_falling"
                                                                                                                      Description:  Start two monitors on FallingEdge 
     20.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_348_falling
     20.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 3/3: issue_348_rising
-    20.00ns INFO     ..t.issue_348_rising.0x7f0d0f9776a0       decorators.py:253  in _advance                        Starting test: "issue_348_rising"
+    20.00ns INFO     ..t.issue_348_rising.0x7fd747ae7630       decorators.py:253  in _advance                        Starting test: "issue_348_rising"
                                                                                                                      Description:  Start two monitors on RisingEdge 
     30.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_348_rising
     30.00ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 3 tests (0 skipped)
     30.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               *************************************************************************************
                                                                                                                      ** TEST                         PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      *************************************************************************************
-                                                                                                                     ** issue_348.issue_348_either     PASS           10.00          0.01      1630.54  **
-                                                                                                                     ** issue_348.issue_348_falling    PASS           10.00          0.00      2819.03  **
-                                                                                                                     ** issue_348.issue_348_rising     PASS           10.00          0.00      2831.40  **
+                                                                                                                     ** issue_348.issue_348_either     PASS           10.00          0.01      1621.09  **
+                                                                                                                     ** issue_348.issue_348_falling    PASS           10.00          0.00      2836.19  **
+                                                                                                                     ** issue_348.issue_348_rising     PASS           10.00          0.00      2872.70  **
                                                                                                                      *************************************************************************************
                                                                                                                      
     30.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -444,26 +444,26 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 30.00 NS                               **
                                                                                                                      **                              REAL TIME : 0.02 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 1476.18 NS/S                           **
+                                                                                                                     **                        SIM / REAL TIME : 1467.27 NS/S                           **
                                                                                                                      *************************************************************************************
                                                                                                                      
     30.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
 Simulation complete via $finish(1) at time 30003 PS + 0
 ncsim> exit
-make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_348'
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_348'
+make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_348'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_348'
 cd test_cases/issue_588 && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_588'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_588'
 make results.xml
-make[2]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_588'
+make[2]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_588'
 mkdir -p sim_build
-LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_588:/tape/ashmansk/try_cocotb_120rc1/cocotb:/tape/ashmansk/try_cocotb_120rc1/cocotb: \
-	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_588 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_588:/tape/ashmansk/try_cocotb_120/cocotb:/tape/ashmansk/try_cocotb_120/cocotb: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_588 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
 	GPI_EXTRA= TOPLEVEL_LANG=verilog \
 	set -o pipefail; \
-	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_588/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_588/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
 irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_588/../../../tests/designs/sample_module/sample_module.sv
+file: /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_588/../../../tests/designs/sample_module/sample_module.sv
 	module worklib.sample_module:sv
 		errors: 0, warnings: 0
      -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
@@ -471,12 +471,12 @@ file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_588/../../.
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		$unit_0x006fd8fb
+		$unit_0x19014cc4
 		sample_module
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.sample_module:sv <0x694a91ea>
+		worklib.sample_module:sv <0x58a62064>
 			streams:  14, words:  3370
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -498,11 +498,11 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
      -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
-     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603899
+     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120/cocotb
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564606146
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_588.issue_588_coroutine_list
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: issue_588_coroutine_list
-     0.00ns INFO     ..588_coroutine_list.0x7eff8918c6d8       decorators.py:253  in _advance                        Starting test: "issue_588_coroutine_list"
+     0.00ns INFO     ..588_coroutine_list.0x7f46c224b588       decorators.py:253  in _advance                        Starting test: "issue_588_coroutine_list"
                                                                                                                      Description:  Yield a list of triggers and coroutines.
      5.00ns INFO     cocotb.sample_module                       issue_588.py:13   in sample_coroutine                Sample coroutine yielded.
      5.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_588_coroutine_list
@@ -510,34 +510,34 @@ ncsim> run
      5.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ********************************************************************************************
                                                                                                                      ** TEST                                PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ********************************************************************************************
-                                                                                                                     ** issue_588.issue_588_coroutine_list    PASS            5.00          0.00      4823.11  **
+                                                                                                                     ** issue_588.issue_588_coroutine_list    PASS            5.00          0.00      4347.30  **
                                                                                                                      ********************************************************************************************
                                                                                                                      
      5.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
                                                                                                                      **                                 ERRORS : 0                                      **
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 5.00 NS                                **
-                                                                                                                     **                              REAL TIME : 0.01 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 730.02 NS/S                            **
+                                                                                                                     **                              REAL TIME : 0.26 S                                 **
+                                                                                                                     **                        SIM / REAL TIME : 18.94 NS/S                             **
                                                                                                                      *************************************************************************************
                                                                                                                      
      5.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
 Simulation complete via $finish(1) at time 5001 PS + 0
 ncsim> exit
-make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_588'
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_588'
+make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_588'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_588'
 cd test_cases/issue_768_a && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_a'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_a'
 make results.xml
-make[2]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_a'
+make[2]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_a'
 mkdir -p sim_build
-LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_a:/tape/ashmansk/try_cocotb_120rc1/cocotb:/tape/ashmansk/try_cocotb_120rc1/cocotb: \
-	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_768 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_a:/tape/ashmansk/try_cocotb_120/cocotb:/tape/ashmansk/try_cocotb_120/cocotb: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_768 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
 	GPI_EXTRA= TOPLEVEL_LANG=verilog \
 	set -o pipefail; \
-	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_a/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_a/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
 irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_a/../../../tests/designs/sample_module/sample_module.sv
+file: /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_a/../../../tests/designs/sample_module/sample_module.sv
 	module worklib.sample_module:sv
 		errors: 0, warnings: 0
      -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
@@ -545,12 +545,12 @@ file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_a/../..
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		$unit_0x006fd8fb
+		$unit_0x19014cc4
 		sample_module
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.sample_module:sv <0x694a91ea>
+		worklib.sample_module:sv <0x58a62064>
 			streams:  14, words:  3370
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -572,18 +572,18 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
      -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
-     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603900
+     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120/cocotb
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564606148
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_768.test
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: test
-     0.00ns INFO     cocotb.test.test.0x7f48a0e866a0           decorators.py:253  in _advance                        Starting test: "test"
+     0.00ns INFO     cocotb.test.test.0x7fa92466d588           decorators.py:253  in _advance                        Starting test: "test"
                                                                                                                      Description: None
      0.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: test
      0.00ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 1 tests (0 skipped)
      0.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ************************************************************************
                                                                                                                      ** TEST            PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ************************************************************************
-                                                                                                                     ** issue_768.test    PASS            0.00          0.00         0.92  **
+                                                                                                                     ** issue_768.test    PASS            0.00          0.00         0.90  **
                                                                                                                      ************************************************************************
                                                                                                                      
      0.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -597,20 +597,20 @@ ncsim> run
      0.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
 Simulation complete via $finish(1) at time 2 PS + 0
 ncsim> exit
-make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_a'
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_a'
+make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_a'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_a'
 cd test_cases/issue_768_b && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_b'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_b'
 make results.xml
-make[2]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_b'
+make[2]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_b'
 mkdir -p sim_build
-LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_b:/tape/ashmansk/try_cocotb_120rc1/cocotb:/tape/ashmansk/try_cocotb_120rc1/cocotb: \
-	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_768 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_b:/tape/ashmansk/try_cocotb_120/cocotb:/tape/ashmansk/try_cocotb_120/cocotb: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_768 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
 	GPI_EXTRA= TOPLEVEL_LANG=verilog \
 	set -o pipefail; \
-	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_b/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_b/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
 irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_b/../../../tests/designs/sample_module/sample_module.sv
+file: /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_b/../../../tests/designs/sample_module/sample_module.sv
 	module worklib.sample_module:sv
 		errors: 0, warnings: 0
      -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
@@ -618,12 +618,12 @@ file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_b/../..
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		$unit_0x006fd8fb
+		$unit_0x19014cc4
 		sample_module
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.sample_module:sv <0x694a91ea>
+		worklib.sample_module:sv <0x58a62064>
 			streams:  14, words:  3370
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -645,18 +645,18 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
      -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
-     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603901
+     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120/cocotb
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564606149
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_768.do_test
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: do_test
-     0.00ns INFO     cocotb.test.do_test.0x7f375abfe630        decorators.py:253  in _advance                        Starting test: "do_test"
+     0.00ns INFO     cocotb.test.do_test.0x7f985b599668        decorators.py:253  in _advance                        Starting test: "do_test"
                                                                                                                      Description: None
      0.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: do_test
      0.00ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 1 tests (0 skipped)
      0.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ***************************************************************************
                                                                                                                      ** TEST               PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ***************************************************************************
-                                                                                                                     ** issue_768.do_test    PASS            0.00          0.00         0.80  **
+                                                                                                                     ** issue_768.do_test    PASS            0.00          0.00         0.88  **
                                                                                                                      ***************************************************************************
                                                                                                                      
      0.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -670,20 +670,20 @@ ncsim> run
      0.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
 Simulation complete via $finish(1) at time 2 PS + 0
 ncsim> exit
-make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_b'
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_768_b'
+make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_b'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_768_b'
 cd test_cases/issue_857 && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_857'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_857'
 make results.xml
-make[2]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_857'
+make[2]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_857'
 mkdir -p sim_build
-LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_857:/tape/ashmansk/try_cocotb_120rc1/cocotb:/tape/ashmansk/try_cocotb_120rc1/cocotb: \
-	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_857 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_857:/tape/ashmansk/try_cocotb_120/cocotb:/tape/ashmansk/try_cocotb_120/cocotb: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_857 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
 	GPI_EXTRA= TOPLEVEL_LANG=verilog \
 	set -o pipefail; \
-	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_857/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_857/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
 irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_857/../../../tests/designs/sample_module/sample_module.sv
+file: /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_857/../../../tests/designs/sample_module/sample_module.sv
 	module worklib.sample_module:sv
 		errors: 0, warnings: 0
      -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
@@ -691,12 +691,12 @@ file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_857/../../.
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		$unit_0x006fd8fb
+		$unit_0x19014cc4
 		sample_module
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.sample_module:sv <0x694a91ea>
+		worklib.sample_module:sv <0x58a62064>
 			streams:  14, words:  3370
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -718,11 +718,11 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
      -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
-     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603903
+     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120/cocotb
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564606150
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_857.dummy_coroutine_001
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: dummy_coroutine_001
-     0.00ns INFO     ..ummy_coroutine_001.0x7fc01a6ff6d8       decorators.py:253  in _advance                        Starting test: "dummy_coroutine_001"
+     0.00ns INFO     ..ummy_coroutine_001.0x7f28a40ab6a0       decorators.py:253  in _advance                        Starting test: "dummy_coroutine_001"
                                                                                                                      Description: Automatically generated test
                                                                                                                      
                                                                                                                      
@@ -731,7 +731,7 @@ ncsim> run
     10.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ***************************************************************************************
                                                                                                                      ** TEST                           PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ***************************************************************************************
-                                                                                                                     ** issue_857.dummy_coroutine_001    PASS           10.00          0.00     13899.02  **
+                                                                                                                     ** issue_857.dummy_coroutine_001    PASS           10.00          0.00     15137.94  **
                                                                                                                      ***************************************************************************************
                                                                                                                      
     10.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -739,26 +739,26 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 10.00 NS                               **
                                                                                                                      **                              REAL TIME : 0.02 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 521.73 NS/S                            **
+                                                                                                                     **                        SIM / REAL TIME : 535.18 NS/S                            **
                                                                                                                      *************************************************************************************
                                                                                                                      
     10.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
 Simulation complete via $finish(1) at time 10001 PS + 0
 ncsim> exit
-make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_857'
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_857'
+make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_857'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_857'
 cd test_cases/issue_892 && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_892'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_892'
 make results.xml
-make[2]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_892'
+make[2]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_892'
 mkdir -p sim_build
-LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_892:/tape/ashmansk/try_cocotb_120rc1/cocotb:/tape/ashmansk/try_cocotb_120rc1/cocotb: \
-	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_892 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_892:/tape/ashmansk/try_cocotb_120/cocotb:/tape/ashmansk/try_cocotb_120/cocotb: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_892 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
 	GPI_EXTRA= TOPLEVEL_LANG=verilog \
 	set -o pipefail; \
-	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_892/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_892/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
 irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_892/../../../tests/designs/sample_module/sample_module.sv
+file: /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_892/../../../tests/designs/sample_module/sample_module.sv
 	module worklib.sample_module:sv
 		errors: 0, warnings: 0
      -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
@@ -766,12 +766,12 @@ file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_892/../../.
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		$unit_0x006fd8fb
+		$unit_0x19014cc4
 		sample_module
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.sample_module:sv <0x694a91ea>
+		worklib.sample_module:sv <0x58a62064>
 			streams:  14, words:  3370
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -793,18 +793,18 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
      -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
-     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603904
+     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120/cocotb
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564606152
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_892.error_test
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: error_test
-     0.00ns INFO     ..tb.test.error_test.0x7fe754ba46a0       decorators.py:253  in _advance                        Starting test: "error_test"
+     0.00ns INFO     ..tb.test.error_test.0x7f381811c5c0       decorators.py:253  in _advance                        Starting test: "error_test"
                                                                                                                      Description: None
      1.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: error_test
      1.00ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 1 tests (0 skipped)
      1.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ******************************************************************************
                                                                                                                      ** TEST                  PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ******************************************************************************
-                                                                                                                     ** issue_892.error_test    PASS            1.00          0.00      1592.15  **
+                                                                                                                     ** issue_892.error_test    PASS            1.00          0.00      1600.04  **
                                                                                                                      ******************************************************************************
                                                                                                                      
      1.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -812,26 +812,26 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 1.00 NS                                **
                                                                                                                      **                              REAL TIME : 0.01 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 164.52 NS/S                            **
+                                                                                                                     **                        SIM / REAL TIME : 163.38 NS/S                            **
                                                                                                                      *************************************************************************************
                                                                                                                      
      1.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
 Simulation complete via $finish(1) at time 1001 PS + 0
 ncsim> exit
-make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_892'
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_892'
+make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_892'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_892'
 cd test_cases/issue_893 && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_893'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_893'
 make results.xml
-make[2]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_893'
+make[2]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_893'
 mkdir -p sim_build
-LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_893:/tape/ashmansk/try_cocotb_120rc1/cocotb:/tape/ashmansk/try_cocotb_120rc1/cocotb: \
-	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_893 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_893:/tape/ashmansk/try_cocotb_120/cocotb:/tape/ashmansk/try_cocotb_120/cocotb: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_893 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
 	GPI_EXTRA= TOPLEVEL_LANG=verilog \
 	set -o pipefail; \
-	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_893/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_893/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
 irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_893/../../../tests/designs/sample_module/sample_module.sv
+file: /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_893/../../../tests/designs/sample_module/sample_module.sv
 	module worklib.sample_module:sv
 		errors: 0, warnings: 0
      -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
@@ -839,12 +839,12 @@ file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_893/../../.
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		$unit_0x006fd8fb
+		$unit_0x19014cc4
 		sample_module
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.sample_module:sv <0x694a91ea>
+		worklib.sample_module:sv <0x58a62064>
 			streams:  14, words:  3370
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -866,34 +866,34 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
      -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
-     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603905
+     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120/cocotb
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564606153
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_893.fork_erroring_coroutine
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: fork_erroring_coroutine
-     0.00ns INFO     ..erroring_coroutine.0x7f406f099668       decorators.py:253  in _advance                        Starting test: "fork_erroring_coroutine"
+     0.00ns INFO     ..erroring_coroutine.0x7efea1393630       decorators.py:253  in _advance                        Starting test: "fork_erroring_coroutine"
                                                                                                                      Description: None
      0.00ns ERROR    cocotb.scheduler                              result.py:52   in raise_error                     Forked coroutine coroutine_with_undef raised exception: name 'undefined_variable' is not defined
                                                                                                                      Traceback (most recent call last):
-                                                                                                                       File "/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/scheduler.py", line 698, in schedule
+                                                                                                                       File "/tape/ashmansk/try_cocotb_120/cocotb/cocotb/scheduler.py", line 698, in schedule
                                                                                                                          result = coroutine._advance(send_outcome)
-                                                                                                                       File "/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/decorators.py", line 164, in _advance
+                                                                                                                       File "/tape/ashmansk/try_cocotb_120/cocotb/cocotb/decorators.py", line 164, in _advance
                                                                                                                          raise CoroutineComplete()
                                                                                                                      cocotb.decorators.CoroutineComplete
                                                                                                                      
                                                                                                                      During handling of the above exception, another exception occurred:
                                                                                                                      
                                                                                                                      Traceback (most recent call last):
-                                                                                                                       File "/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/scheduler.py", line 489, in unschedule
+                                                                                                                       File "/tape/ashmansk/try_cocotb_120/cocotb/cocotb/scheduler.py", line 489, in unschedule
                                                                                                                          coro.retval
-                                                                                                                       File "/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/decorators.py", line 130, in retval
+                                                                                                                       File "/tape/ashmansk/try_cocotb_120/cocotb/cocotb/decorators.py", line 130, in retval
                                                                                                                          return self._outcome.get()
-                                                                                                                       File "/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/outcomes.py", line 54, in get
+                                                                                                                       File "/tape/ashmansk/try_cocotb_120/cocotb/cocotb/outcomes.py", line 54, in get
                                                                                                                          raise self.error
-                                                                                                                       File "/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/decorators.py", line 154, in _advance
+                                                                                                                       File "/tape/ashmansk/try_cocotb_120/cocotb/cocotb/decorators.py", line 154, in _advance
                                                                                                                          return outcome.send(self._coro)
-                                                                                                                       File "/tape/ashmansk/try_cocotb_120rc1/cocotb/cocotb/outcomes.py", line 37, in send
+                                                                                                                       File "/tape/ashmansk/try_cocotb_120/cocotb/cocotb/outcomes.py", line 37, in send
                                                                                                                          return gen.send(self.value)
-                                                                                                                       File "/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_893/issue_893.py", line 6, in coroutine_with_undef
+                                                                                                                       File "/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_893/issue_893.py", line 6, in coroutine_with_undef
                                                                                                                          new_variable = undefined_variable
                                                                                                                      NameError: name 'undefined_variable' is not defined
                                                                                                                      
@@ -916,20 +916,20 @@ ncsim> run
      0.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
 Simulation complete via $finish(1) at time 1 PS + 0
 ncsim> exit
-make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_893'
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_893'
+make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_893'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_893'
 cd test_cases/issue_957 && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_957'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_957'
 make results.xml
-make[2]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_957'
+make[2]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_957'
 mkdir -p sim_build
-LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_957:/tape/ashmansk/try_cocotb_120rc1/cocotb:/tape/ashmansk/try_cocotb_120rc1/cocotb: \
-	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_957 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_957:/tape/ashmansk/try_cocotb_120/cocotb:/tape/ashmansk/try_cocotb_120/cocotb: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=issue_957 TESTCASE= TOPLEVEL=sample_module COCOTB_SIM=1 \
 	GPI_EXTRA= TOPLEVEL_LANG=verilog \
 	set -o pipefail; \
-	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_957/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_957/../../../tests/designs/sample_module/sample_module.sv  2>&1 | tee sim_build/sim.log
 irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_957/../../../tests/designs/sample_module/sample_module.sv
+file: /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_957/../../../tests/designs/sample_module/sample_module.sv
 	module worklib.sample_module:sv
 		errors: 0, warnings: 0
      -.--ns INFO     cocotb.gpi                                  gpi_embed.c:111  in embed_init_python               Did not detect Python virtual environment. Using system-wide Python interpreter.
@@ -937,12 +937,12 @@ file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_957/../../.
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
 	Top level design units:
-		$unit_0x006fd8fb
+		$unit_0x19014cc4
 		sample_module
 ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.sample_module:sv <0x694a91ea>
+		worklib.sample_module:sv <0x58a62064>
 			streams:  14, words:  3370
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
@@ -964,24 +964,24 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
      -.--ns INFO     cocotb.gpi                                GpiCommon.cpp:91   in gpi_print_registered_impl       VPI registered
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
-     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603906
+     0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120/cocotb
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564606154
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_957.test1
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_957.test1
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/2: test1
-     0.00ns INFO     cocotb.test.test1.0x7f3b959e15c0          decorators.py:253  in _advance                        Starting test: "test1"
+     0.00ns INFO     cocotb.test.test1.0x7f7a341105c0          decorators.py:253  in _advance                        Starting test: "test1"
                                                                                                                      Description: None
      1.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: test1
      1.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 2/2: test1
-     1.00ns INFO     cocotb.test.test1.0x7f3b959fbb38          decorators.py:253  in _advance                        Starting test: "test1"
+     1.00ns INFO     cocotb.test.test1.0x7f7a3412cb38          decorators.py:253  in _advance                        Starting test: "test1"
                                                                                                                      Description: None
      2.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: test1
      2.00ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 2 tests (0 skipped)
      2.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               *************************************************************************
                                                                                                                      ** TEST             PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      *************************************************************************
-                                                                                                                     ** issue_957.test1    PASS            1.00          0.00       548.54  **
-                                                                                                                     ** issue_957.test1    PASS            1.00          0.00      3152.03  **
+                                                                                                                     ** issue_957.test1    PASS            1.00          0.00       551.93  **
+                                                                                                                     ** issue_957.test1    PASS            1.00          0.00      3046.81  **
                                                                                                                      *************************************************************************
                                                                                                                      
      2.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -989,107 +989,107 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 2.00 NS                                **
                                                                                                                      **                              REAL TIME : 0.01 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 245.85 NS/S                            **
+                                                                                                                     **                        SIM / REAL TIME : 243.79 NS/S                            **
                                                                                                                      *************************************************************************************
                                                                                                                      
      2.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
 Simulation complete via $finish(1) at time 2002 PS + 0
 ncsim> exit
-make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_957'
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/issue_957'
+make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_957'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/issue_957'
 cd test_cases/test_array && make
-make[1]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array'
+make[1]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array'
 make results.xml
-make[2]: Entering directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array'
+make[2]: Entering directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array'
 mkdir -p sim_build
-LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array:/tape/ashmansk/try_cocotb_120rc1/cocotb:/tape/ashmansk/try_cocotb_120rc1/cocotb: \
-	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=test_array TESTCASE= TOPLEVEL=array_module COCOTB_SIM=1 \
+LD_RUN_PATH=/tape/ashmansk/anaconda3/lib: PYTHONPATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64:/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array:/tape/ashmansk/try_cocotb_120/cocotb:/tape/ashmansk/try_cocotb_120/cocotb: \
+	LD_LIBRARY_PATH=/tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64::/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib:/tape/ashmansk/anaconda3/lib MODULE=test_array TESTCASE= TOPLEVEL=array_module COCOTB_SIM=1 \
 	GPI_EXTRA= TOPLEVEL_LANG=verilog \
 	set -o pipefail; \
-	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v  2>&1 | tee sim_build/sim.log
+	/cad/INCISIVE152-lnx/tools/bin/irun   -licqueue -64 -nclibdirpath sim_build -plinowarn  -v93 -loadvpi /tape/ashmansk/try_cocotb_120/cocotb/tests/build/libs/x86_64/libvpi +access+rwc  /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v  2>&1 | tee sim_build/sim.log
 irun(64): 15.20-s046: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
-file: /tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v
+file: /tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v
 typedef struct {
       |
-ncvlog: *E,EXPMPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,32|6): expecting the keyword 'module', 'macromodule' or 'primitive'[A.1].
+ncvlog: *E,EXPMPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,32|6): expecting the keyword 'module', 'macromodule' or 'primitive'[A.1].
     input  integer                              select_in,
                  |
-ncvlog: *E,REGIOX (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,40|17): reg '', declared in a module/macromodule, cannot also be declared input or inout [12.3.7(IEEE)].
+ncvlog: *E,REGIOX (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,40|17): reg '', declared in a module/macromodule, cannot also be declared input or inout [12.3.7(IEEE)].
     output logic                                port_logic_out,
                                                              |
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,50|61): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,50|61): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
     output logic                                port_logic_out,
                                                              |
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,50|61): Expecting a ',' or ')' [12.3.2(IEEE)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,50|61): Expecting a ',' or ')' [12.3.2(IEEE)].
     output logic   [7:0]                        port_logic_vec_out,
                    |
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,51|19): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,51|19): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
     output logic   [7:0]                        port_logic_vec_out,
                    |
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,51|19): Expecting a ',' or ')' [12.3.2(IEEE)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,51|19): Expecting a ',' or ')' [12.3.2(IEEE)].
     output rec_type                             port_rec_out,
                                                            |
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,57|59): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,57|59): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
     output rec_type                             port_rec_out,
                                                            |
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,57|59): Expecting a ',' or ')' [12.3.2(IEEE)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,57|59): Expecting a ',' or ')' [12.3.2(IEEE)].
     output rec_type                             port_cmplx_out[0:1]
                                                              |
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|61): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|61): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
     output rec_type                             port_cmplx_out[0:1]
                                                              |
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|61): Expecting a ',' or ')' [12.3.2(IEEE)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|61): Expecting a ',' or ')' [12.3.2(IEEE)].
     output rec_type                             port_cmplx_out[0:1]
                                                               |
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|62): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|62): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
     output rec_type                             port_cmplx_out[0:1]
                                                               |
-ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|62): Expecting a ',' or ')' [12.3.2(IEEE)].
+ncvlog: *E,EXPCORP (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,58|62): Expecting a ',' or ')' [12.3.2(IEEE)].
 parameter logic          param_logic       = 1'b1;
                                    |
-ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,61|35): expecting an equal sign ('=') [3.10(IEEE)].
+ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,61|35): expecting an equal sign ('=') [3.10(IEEE)].
 parameter logic [7:0]    param_logic_vec   = 8'hDA;
                 |
-ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,62|16): expecting an equal sign ('=') [3.10(IEEE)].
+ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,62|16): expecting an equal sign ('=') [3.10(IEEE)].
 localparam logic          const_logic       = 1'b0;
                                     |
-ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,71|36): expecting an equal sign ('=') [3.10(IEEE)].
+ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,71|36): expecting an equal sign ('=') [3.10(IEEE)].
 localparam logic [7:0]    const_logic_vec   = 8'h3D;
                  |
-ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,72|17): expecting an equal sign ('=') [3.10(IEEE)].
+ncvlog: *E,EXPEQL (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,72|17): expecting an equal sign ('=') [3.10(IEEE)].
 wire logic          sig_logic;
                             |
-ncvlog: *E,EXPCOM (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,91|28): expecting a comma [3.2.1][6.1(IEEE)].
+ncvlog: *E,EXPCOM (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,91|28): expecting a comma [3.2.1][6.1(IEEE)].
 wire logic [7:0]    sig_logic_vec;
                                 |
-ncvlog: *E,EXPCOM (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,92|32): expecting a comma [3.2.1][6.1(IEEE)].
+ncvlog: *E,EXPCOM (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,92|32): expecting a comma [3.2.1][6.1(IEEE)].
      rec_type       sig_rec;
                            |
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,98|27): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,98|27): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
      rec_type       sig_cmplx [0:1];
                                    |
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,99|35): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,99|35): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
 typedef logic [7:0] uint16_t;
                            |
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,101|27): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,101|27): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
 typedef logic [7:0] uint16_t;
                             |
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,101|28): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,101|28): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
 uint16_t sig_t7 [3:0][3:0];
                           |
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,103|26): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,103|26): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
 uint16_t [3:0][3:0] sig_t8;
          |
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,104|9): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,104|9): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
 uint16_t [3:0][3:0] sig_t8;
                           |
-ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,104|26): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+ncvlog: *E,EXPLPA (/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array/../../../tests/designs/array_module/array_module.v,104|26): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
 	module worklib.array_module:v
 		errors: 24, warnings: 0
 ncvlog: *F,NOTOPL: no top-level unit found, must have recursive instances.
 irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 2).
 make[2]: *** [results.xml] Error 1
-make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array'
+make[2]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array'
 make[1]: *** [sim] Error 2
-make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120rc1/cocotb/tests/test_cases/test_array'
+make[1]: Leaving directory `/tape/ashmansk/try_cocotb_120/cocotb/tests/test_cases/test_array'
 make: *** [test_array] Error 2
