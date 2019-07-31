@@ -89,25 +89,25 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
      0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564602898
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603892
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_120.issue_120_scheduling
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: issue_120_scheduling
-     0.00ns INFO     ..sue_120_scheduling.0x7f92ad5d5588       decorators.py:253  in _advance                        Starting test: "issue_120_scheduling"
+     0.00ns INFO     ..sue_120_scheduling.0x7f335ad8a400       decorators.py:253  in _advance                        Starting test: "issue_120_scheduling"
                                                                                                                      Description: None
     15.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_120_scheduling
     15.00ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 1 tests (0 skipped)
     15.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ****************************************************************************************
                                                                                                                      ** TEST                            PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ****************************************************************************************
-                                                                                                                     ** issue_120.issue_120_scheduling    PASS           15.00          0.05       305.80  **
+                                                                                                                     ** issue_120.issue_120_scheduling    PASS           15.00          0.01      2928.36  **
                                                                                                                      ****************************************************************************************
                                                                                                                      
     15.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
                                                                                                                      **                                 ERRORS : 0                                      **
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 15.00 NS                               **
-                                                                                                                     **                              REAL TIME : 0.05 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 278.95 NS/S                            **
+                                                                                                                     **                              REAL TIME : 0.01 S                                 **
+                                                                                                                     **                        SIM / REAL TIME : 1559.48 NS/S                           **
                                                                                                                      *************************************************************************************
                                                                                                                      
     15.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
@@ -162,11 +162,11 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
      0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564602899
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603894
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test test_integers.test_integer
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test test_reals.assign_double
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/2: test_integer
-     0.00ns INFO     ...test.test_integer.0x7f984b0a0198       decorators.py:253  in _advance                        Starting test: "test_integer"
+     0.00ns INFO     ...test.test_integer.0x7f1298d59be0       decorators.py:253  in _advance                        Starting test: "test_integer"
                                                                                                                      Description: 
                                                                                                                          Test access to integers
                                                                                                                          
@@ -174,28 +174,28 @@ ncsim> run
      0.03ns INFO     cocotb.test                            test_integers.py:25   in test_integer                    dut.stream_in_int = 4
      0.03ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: test_integer
      0.03ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 2/2: assign_double
-     0.03ns INFO     ..test.assign_double.0x7f984b0766d8       decorators.py:253  in _advance                        Starting test: "assign_double"
+     0.03ns INFO     ..test.assign_double.0x7f1298d3f5c0       decorators.py:253  in _advance                        Starting test: "assign_double"
                                                                                                                      Description: 
                                                                                                                          Assign a random floating point value, read it back from the DUT and check
                                                                                                                          it matches what we assigned
                                                                                                                          
-     0.03ns INFO     cocotb.test                               test_reals.py:21   in assign_double                   Setting the value 5.89089e+306
-     0.03ns INFO     cocotb.test                               test_reals.py:26   in assign_double                   Read back value 5.89089e+306
+     0.03ns INFO     cocotb.test                               test_reals.py:21   in assign_double                   Setting the value 9.62904e+305
+     0.03ns INFO     cocotb.test                               test_reals.py:26   in assign_double                   Read back value 9.62904e+305
      0.04ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: assign_double
      0.04ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 2 tests (0 skipped)
      0.04ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ************************************************************************************
                                                                                                                      ** TEST                        PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ************************************************************************************
-                                                                                                                     ** test_integers.test_integer    PASS            0.03          0.05         0.63  **
-                                                                                                                     ** test_reals.assign_double      PASS            0.00          0.04         0.09  **
+                                                                                                                     ** test_integers.test_integer    PASS            0.03          0.00        11.78  **
+                                                                                                                     ** test_reals.assign_double      PASS            0.00          0.00         4.71  **
                                                                                                                      ************************************************************************************
                                                                                                                      
      0.04ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
                                                                                                                      **                                 ERRORS : 0                                      **
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 0.04 NS                                **
-                                                                                                                     **                              REAL TIME : 0.10 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 0.35 NS/S                              **
+                                                                                                                     **                              REAL TIME : 0.01 S                                 **
+                                                                                                                     **                        SIM / REAL TIME : 3.34 NS/S                              **
                                                                                                                      *************************************************************************************
                                                                                                                      
      0.04ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
@@ -250,10 +250,10 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
      0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564602901
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603895
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_142.issue_142_overflow_error
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: issue_142_overflow_error
-     0.00ns INFO     ..142_overflow_error.0x7f4fd57646d8       decorators.py:253  in _advance                        Starting test: "issue_142_overflow_error"
+     0.00ns INFO     ..142_overflow_error.0x7f6bbd783710       decorators.py:253  in _advance                        Starting test: "issue_142_overflow_error"
                                                                                                                      Description: Tranparently convert ints too long to pass
                                                                                                                             through the GPI interface natively into BinaryValues
     17.50ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_142_overflow_error
@@ -261,7 +261,7 @@ ncsim> run
     17.50ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ********************************************************************************************
                                                                                                                      ** TEST                                PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ********************************************************************************************
-                                                                                                                     ** issue_142.issue_142_overflow_error    PASS           17.50          0.01      2871.96  **
+                                                                                                                     ** issue_142.issue_142_overflow_error    PASS           17.50          0.01      3031.12  **
                                                                                                                      ********************************************************************************************
                                                                                                                      
     17.50ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -269,7 +269,7 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 17.50 NS                               **
                                                                                                                      **                              REAL TIME : 0.01 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 1403.45 NS/S                           **
+                                                                                                                     **                        SIM / REAL TIME : 1498.60 NS/S                           **
                                                                                                                      *************************************************************************************
                                                                                                                      
     17.50ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
@@ -328,18 +328,18 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
      0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564602902
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603896
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_330.issue_330_direct
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_330.issue_330_iteration
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/2: issue_330_direct
-     0.00ns INFO     ..t.issue_330_direct.0x7fe7fabd05f8       decorators.py:253  in _advance                        Starting test: "issue_330_direct"
+     0.00ns INFO     ..t.issue_330_direct.0x7fd46928c5f8       decorators.py:253  in _advance                        Starting test: "issue_330_direct"
                                                                                                                      Description: 
                                                                                                                          Access a structure
                                                                                                                          
      0.01ns INFO     cocotb.test                                issue_330.py:21   in issue_330_direct                Value of inout_if => a_in = z ; b_out = z
      0.01ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_330_direct
      0.01ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 2/2: issue_330_iteration
-     0.01ns INFO     ..ssue_330_iteration.0x7fe7fabfb198       decorators.py:253  in _advance                        Starting test: "issue_330_iteration"
+     0.01ns INFO     ..ssue_330_iteration.0x7fd4692b7198       decorators.py:253  in _advance                        Starting test: "issue_330_iteration"
                                                                                                                      Description: 
                                                                                                                          Access a structure via issue_330_iteration
                                                                                                                          
@@ -350,16 +350,16 @@ ncsim> run
      0.02ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ***************************************************************************************
                                                                                                                      ** TEST                           PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ***************************************************************************************
-                                                                                                                     ** issue_330.issue_330_direct       PASS            0.01          0.04         0.29  **
-                                                                                                                     ** issue_330.issue_330_iteration    PASS            0.01          0.00        18.18  **
+                                                                                                                     ** issue_330.issue_330_direct       PASS            0.01          0.00         5.07  **
+                                                                                                                     ** issue_330.issue_330_iteration    PASS            0.01          0.00        21.94  **
                                                                                                                      ***************************************************************************************
                                                                                                                      
      0.02ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
                                                                                                                      **                                 ERRORS : 0                                      **
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 0.02 NS                                **
-                                                                                                                     **                              REAL TIME : 0.05 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 0.49 NS/S                              **
+                                                                                                                     **                              REAL TIME : 0.01 S                                 **
+                                                                                                                     **                        SIM / REAL TIME : 2.43 NS/S                              **
                                                                                                                      *************************************************************************************
                                                                                                                      
      0.02ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
@@ -414,29 +414,29 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
      0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564602903
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603898
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_348.issue_348_either
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_348.issue_348_falling
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_348.issue_348_rising
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/3: issue_348_either
-     0.00ns INFO     ..t.issue_348_either.0x7efc3384efd0       decorators.py:253  in _advance                        Starting test: "issue_348_either"
+     0.00ns INFO     ..t.issue_348_either.0x7f0d0f9a30f0       decorators.py:253  in _advance                        Starting test: "issue_348_either"
                                                                                                                      Description:  Start two monitors on Edge 
     10.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_348_either
     10.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 2/3: issue_348_falling
-    10.00ns INFO     ...issue_348_falling.0x7efc3384ee48       decorators.py:253  in _advance                        Starting test: "issue_348_falling"
+    10.00ns INFO     ...issue_348_falling.0x7f0d0f998f28       decorators.py:253  in _advance                        Starting test: "issue_348_falling"
                                                                                                                      Description:  Start two monitors on FallingEdge 
     20.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_348_falling
     20.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 3/3: issue_348_rising
-    20.00ns INFO     ..t.issue_348_rising.0x7efc33831588       decorators.py:253  in _advance                        Starting test: "issue_348_rising"
+    20.00ns INFO     ..t.issue_348_rising.0x7f0d0f9776a0       decorators.py:253  in _advance                        Starting test: "issue_348_rising"
                                                                                                                      Description:  Start two monitors on RisingEdge 
     30.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_348_rising
     30.00ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 3 tests (0 skipped)
     30.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               *************************************************************************************
                                                                                                                      ** TEST                         PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      *************************************************************************************
-                                                                                                                     ** issue_348.issue_348_either     PASS           10.00          0.01      1633.52  **
-                                                                                                                     ** issue_348.issue_348_falling    PASS           10.00          0.00      2775.39  **
-                                                                                                                     ** issue_348.issue_348_rising     PASS           10.00          0.00      2814.50  **
+                                                                                                                     ** issue_348.issue_348_either     PASS           10.00          0.01      1630.54  **
+                                                                                                                     ** issue_348.issue_348_falling    PASS           10.00          0.00      2819.03  **
+                                                                                                                     ** issue_348.issue_348_rising     PASS           10.00          0.00      2831.40  **
                                                                                                                      *************************************************************************************
                                                                                                                      
     30.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -444,7 +444,7 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 30.00 NS                               **
                                                                                                                      **                              REAL TIME : 0.02 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 1468.72 NS/S                           **
+                                                                                                                     **                        SIM / REAL TIME : 1476.18 NS/S                           **
                                                                                                                      *************************************************************************************
                                                                                                                      
     30.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
@@ -499,10 +499,10 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
      0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564602904
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603899
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_588.issue_588_coroutine_list
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: issue_588_coroutine_list
-     0.00ns INFO     ..588_coroutine_list.0x7f9897b715f8       decorators.py:253  in _advance                        Starting test: "issue_588_coroutine_list"
+     0.00ns INFO     ..588_coroutine_list.0x7eff8918c6d8       decorators.py:253  in _advance                        Starting test: "issue_588_coroutine_list"
                                                                                                                      Description:  Yield a list of triggers and coroutines.
      5.00ns INFO     cocotb.sample_module                       issue_588.py:13   in sample_coroutine                Sample coroutine yielded.
      5.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: issue_588_coroutine_list
@@ -510,7 +510,7 @@ ncsim> run
      5.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ********************************************************************************************
                                                                                                                      ** TEST                                PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ********************************************************************************************
-                                                                                                                     ** issue_588.issue_588_coroutine_list    PASS            5.00          0.00      4524.53  **
+                                                                                                                     ** issue_588.issue_588_coroutine_list    PASS            5.00          0.00      4823.11  **
                                                                                                                      ********************************************************************************************
                                                                                                                      
      5.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -518,7 +518,7 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 5.00 NS                                **
                                                                                                                      **                              REAL TIME : 0.01 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 699.05 NS/S                            **
+                                                                                                                     **                        SIM / REAL TIME : 730.02 NS/S                            **
                                                                                                                      *************************************************************************************
                                                                                                                      
      5.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
@@ -573,10 +573,10 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
      0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564602906
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603900
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_768.test
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: test
-     0.00ns INFO     cocotb.test.test.0x7fa966a1d5f8           decorators.py:253  in _advance                        Starting test: "test"
+     0.00ns INFO     cocotb.test.test.0x7f48a0e866a0           decorators.py:253  in _advance                        Starting test: "test"
                                                                                                                      Description: None
      0.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: test
      0.00ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 1 tests (0 skipped)
@@ -646,17 +646,17 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
      0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564602907
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603901
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_768.do_test
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: do_test
-     0.00ns INFO     cocotb.test.do_test.0x7f14823265f8        decorators.py:253  in _advance                        Starting test: "do_test"
+     0.00ns INFO     cocotb.test.do_test.0x7f375abfe630        decorators.py:253  in _advance                        Starting test: "do_test"
                                                                                                                      Description: None
      0.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: do_test
      0.00ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 1 tests (0 skipped)
      0.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ***************************************************************************
                                                                                                                      ** TEST               PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ***************************************************************************
-                                                                                                                     ** issue_768.do_test    PASS            0.00          0.00         0.93  **
+                                                                                                                     ** issue_768.do_test    PASS            0.00          0.00         0.80  **
                                                                                                                      ***************************************************************************
                                                                                                                      
      0.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -664,7 +664,7 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 0.00 NS                                **
                                                                                                                      **                              REAL TIME : 0.01 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 0.26 NS/S                              **
+                                                                                                                     **                        SIM / REAL TIME : 0.25 NS/S                              **
                                                                                                                      *************************************************************************************
                                                                                                                      
      0.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
@@ -719,10 +719,10 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
      0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564602908
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603903
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_857.dummy_coroutine_001
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: dummy_coroutine_001
-     0.00ns INFO     ..ummy_coroutine_001.0x7f2af4a94588       decorators.py:253  in _advance                        Starting test: "dummy_coroutine_001"
+     0.00ns INFO     ..ummy_coroutine_001.0x7fc01a6ff6d8       decorators.py:253  in _advance                        Starting test: "dummy_coroutine_001"
                                                                                                                      Description: Automatically generated test
                                                                                                                      
                                                                                                                      
@@ -731,7 +731,7 @@ ncsim> run
     10.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ***************************************************************************************
                                                                                                                      ** TEST                           PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ***************************************************************************************
-                                                                                                                     ** issue_857.dummy_coroutine_001    PASS           10.00          0.00     14133.17  **
+                                                                                                                     ** issue_857.dummy_coroutine_001    PASS           10.00          0.00     13899.02  **
                                                                                                                      ***************************************************************************************
                                                                                                                      
     10.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -739,7 +739,7 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 10.00 NS                               **
                                                                                                                      **                              REAL TIME : 0.02 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 493.95 NS/S                            **
+                                                                                                                     **                        SIM / REAL TIME : 521.73 NS/S                            **
                                                                                                                      *************************************************************************************
                                                                                                                      
     10.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
@@ -794,17 +794,17 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
      0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564602909
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603904
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_892.error_test
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: error_test
-     0.00ns INFO     ..tb.test.error_test.0x7f3019f904e0       decorators.py:253  in _advance                        Starting test: "error_test"
+     0.00ns INFO     ..tb.test.error_test.0x7fe754ba46a0       decorators.py:253  in _advance                        Starting test: "error_test"
                                                                                                                      Description: None
      1.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: error_test
      1.00ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 1 tests (0 skipped)
      1.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               ******************************************************************************
                                                                                                                      ** TEST                  PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      ******************************************************************************
-                                                                                                                     ** issue_892.error_test    PASS            1.00          0.00      1572.47  **
+                                                                                                                     ** issue_892.error_test    PASS            1.00          0.00      1592.15  **
                                                                                                                      ******************************************************************************
                                                                                                                      
      1.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -812,7 +812,7 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 1.00 NS                                **
                                                                                                                      **                              REAL TIME : 0.01 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 161.13 NS/S                            **
+                                                                                                                     **                        SIM / REAL TIME : 164.52 NS/S                            **
                                                                                                                      *************************************************************************************
                                                                                                                      
      1.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
@@ -867,10 +867,10 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
      0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564602911
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603905
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_893.fork_erroring_coroutine
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/1: fork_erroring_coroutine
-     0.00ns INFO     ..erroring_coroutine.0x7f81536ef710       decorators.py:253  in _advance                        Starting test: "fork_erroring_coroutine"
+     0.00ns INFO     ..erroring_coroutine.0x7f406f099668       decorators.py:253  in _advance                        Starting test: "fork_erroring_coroutine"
                                                                                                                      Description: None
      0.00ns ERROR    cocotb.scheduler                              result.py:52   in raise_error                     Forked coroutine coroutine_with_undef raised exception: name 'undefined_variable' is not defined
                                                                                                                      Traceback (most recent call last):
@@ -965,23 +965,23 @@ ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009
 ncsim> source /cad/INCISIVE152-lnx/tools/inca/files/ncsimrc
 ncsim> run
      0.00ns INFO     cocotb                                      __init__.py:131  in _initialise_testbench           Running tests with Cocotb v1.2.0 from /tape/ashmansk/try_cocotb_120rc1/cocotb
-     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564602912
+     0.00ns INFO     cocotb                                      __init__.py:148  in _initialise_testbench           Seeding Python random module with 1564603906
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_957.test1
      0.00ns INFO     cocotb.regression                         regression.py:187  in initialise                      Found test issue_957.test1
      0.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 1/2: test1
-     0.00ns INFO     cocotb.test.test1.0x7f24826ea6d8          decorators.py:253  in _advance                        Starting test: "test1"
+     0.00ns INFO     cocotb.test.test1.0x7f3b959e15c0          decorators.py:253  in _advance                        Starting test: "test1"
                                                                                                                      Description: None
      1.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: test1
      1.00ns INFO     cocotb.regression                         regression.py:321  in execute                         Running test 2/2: test1
-     1.00ns INFO     cocotb.test.test1.0x7f248270bc88          decorators.py:253  in _advance                        Starting test: "test1"
+     1.00ns INFO     cocotb.test.test1.0x7f3b959fbb38          decorators.py:253  in _advance                        Starting test: "test1"
                                                                                                                      Description: None
      2.00ns INFO     cocotb.regression                         regression.py:266  in handle_result                   Test Passed: test1
      2.00ns INFO     cocotb.regression                         regression.py:210  in tear_down                       Passed 2 tests (0 skipped)
      2.00ns INFO     cocotb.regression                         regression.py:375  in _log_test_summary               *************************************************************************
                                                                                                                      ** TEST             PASS/FAIL  SIM TIME(NS)  REAL TIME(S)  RATIO(NS/S) **
                                                                                                                      *************************************************************************
-                                                                                                                     ** issue_957.test1    PASS            1.00          0.00       551.35  **
-                                                                                                                     ** issue_957.test1    PASS            1.00          0.00      3214.78  **
+                                                                                                                     ** issue_957.test1    PASS            1.00          0.00       548.54  **
+                                                                                                                     ** issue_957.test1    PASS            1.00          0.00      3152.03  **
                                                                                                                      *************************************************************************
                                                                                                                      
      2.00ns INFO     cocotb.regression                         regression.py:392  in _log_sim_summary                *************************************************************************************
@@ -989,7 +989,7 @@ ncsim> run
                                                                                                                      *************************************************************************************
                                                                                                                      **                               SIM TIME : 2.00 NS                                **
                                                                                                                      **                              REAL TIME : 0.01 S                                 **
-                                                                                                                     **                        SIM / REAL TIME : 243.24 NS/S                            **
+                                                                                                                     **                        SIM / REAL TIME : 245.85 NS/S                            **
                                                                                                                      *************************************************************************************
                                                                                                                      
      2.00ns INFO     cocotb.regression                         regression.py:219  in tear_down                       Shutting down...
